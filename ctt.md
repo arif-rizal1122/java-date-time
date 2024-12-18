@@ -42,3 +42,28 @@ https://currentmillis.com/
 3. Untuk itu, kita butuh menggunakan class Calendar untuk memanipulasi tanggal dan waktu
 4. Class Calendar tidak memiliki public constructor, sehingga untuk membuat object Calendar, kita akan menggunakan static method milik calendar bernama getInstance()
 
+# TIMEZONE
+
+1. Class TimeZone merupakan representasi dari data time zone
+2. Secara default, jika kita membuat object Calendar, dan tidak menggunakan TimeZone, secara otomatis objectnya akan menggunakan default TimeZone, yaitu timezone sistem operasi yang kita gunakan.
+3. Untuk mengetahui default time zone, kita bisa gunakan method TimeZone.getDefault()
+4. Sedangkan jika ingin membuat object TimeZone, kita bisa gunakan method TimeZone.getTimeZone(“Zone ID”)
+5. Untuk mengetahui semua zone id yang didukung oleh Java, kita bisa gunakan TimeZone.getAvailableIDs()
+
+¥ TimeZone Date
+1. Class Date tidak memiliki method apapun untuk mendapatkan time zone atau mengubah time zone
+2. Secara default, saat kita membuat object Date, object tersebut akan menggunakan time zone default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
