@@ -33,3 +33,12 @@
 Date menggunakan milisecond setelah UNIX epoch (January 1, 1970 00:00:00 UTC)
 Untuk mendapatkan milisecond saat ini, di Java kita bisa menggunakan System.currentTimeMilis()
 https://currentmillis.com/ 
+
+
+# CALENDER
+
+1. Class Calendar adalah class yang digunakan sebagai pembantu class Date
+2. Pada class Date, hampir semua method untuk melakukan manipulasi tanggal dan waktu sudah ditandai sebagai @Deprecated, artinya tidak direkomendasikan digunakan lagi
+3. Untuk itu, kita butuh menggunakan class Calendar untuk memanipulasi tanggal dan waktu
+4. Class Calendar tidak memiliki public constructor, sehingga untuk membuat object Calendar, kita akan menggunakan static method milik calendar bernama getInstance()
+
