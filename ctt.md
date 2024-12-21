@@ -54,6 +54,30 @@ https://currentmillis.com/
 1. Class Date tidak memiliki method apapun untuk mendapatkan time zone atau mengubah time zone
 2. Secara default, saat kita membuat object Date, object tersebut akan menggunakan time zone default
 
+# LOCALDATE
+
+1. LocalDate adalah class di Date & Time API baru
+2. LocalDate merupakan representasi untuk tipe data tanggal (tanpa waktu)
+3. Default format waktu untuk LocalDate adalah yyyy-MM-dd
+
+¥ Mengubah LocalDate
+1. Object LocalDate juga bisa kita ubah tanggal nya jika kita mau
+2. Untuk mengubah tanggal, kita bisa menggunakan method with, seperti withYear, withMonth, dan lain-lain
+3. Perlu diingat, mengubah LocalDate akan menciptakan object LocalDate baru, artinya object aslinya tidak akan berubah, karena bersifat immutable
+
+
+¥ Manipulasi LocalDate
+1. Object LocalDate juga bisa kita manipulasi, seperti menambah tanggal atau mengurangi tanggal.
+2. Untuk menambah tanggal, kita bisa gunakan method plus, seperti plusYears, plusMonths, plusDays, dan lain-lain
+3. Untuk mengurangi tanggal, kita bisa gunakan method minus, seperti minusYears, minusMonths, minusDays, dan lain-lain
+4. Perlu diingat, manipulasi LocalDate akan menciptakan object LocalDate baru, artinya object aslinya tidak akan berubah, karena bersifat immutable
+
+
+¥ Mengambil Tanggal LocalDate
+1. LocalDate juga mendukung pengambilan detail data tanggal nya, seperti tahun, bulan, hari dalam bulan, hari dalam tahun, dan lain-lain
+2. Untuk mengambil data tanggal, kita bisa menggunakan method get, seperti getYear, getMonth, dan lain-lain
+
+
 
 
 
