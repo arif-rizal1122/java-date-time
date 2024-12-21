@@ -103,6 +103,16 @@ https://currentmillis.com/
 3. Sedangkan untuk melakukan konversi dari LocalTime ke LocalDateTime, kita bisa mennggunakann method atDate()
 
 
+# Year, YearMonth dan MonthDay
+
+1. Di Date & Time API baru, terdapat class Year , YearMonth dan MonthDay
+2. Seperti dari nama class nya, Year digunakan untuk tanggal yang hanya berisi data tahun, dan YearMonth adalah tanggal yang berisi data tahun dan bulan, dan MonthDay adalah tanggal berisi bulan dan hari
+3. Kenapa menggunakan Year? Kenapa tidak langsung menggunakan angka saja? Misal 2020. Di Year, sudah banyak sekali method yang bisa kita gunakan untuk manipulasi data tanggal dan konversi ke tipe lain seperti LocalDate misal nya
+4. Begitu juga dengan YearMonth dan MonthDay
+5. Format default untuk Year adalah yyyy dan format untuk YearMonth adalah yyyy-MM dan format untuk MonthDay adalah --MM-dd
+
+
+
 
 
 
