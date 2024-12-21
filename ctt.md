@@ -77,6 +77,16 @@ https://currentmillis.com/
 1. LocalDate juga mendukung pengambilan detail data tanggal nya, seperti tahun, bulan, hari dalam bulan, hari dalam tahun, dan lain-lain
 2. Untuk mengambil data tanggal, kita bisa menggunakan method get, seperti getYear, getMonth, dan lain-lain
 
+# LOCALTIME
+
+1. Berbeda dengan LocalDate, LocalTime merupakan representasi data waktu (tanpa tanggal)
+2. Cara penggunaanya dan method-method nya hampir sama dengan LocalDate
+3. LocalTime juga immutable, jadi kita tidak bisa mengubahnya setelah datanya dibuat, jika kita ubah, maka akan menghasilkan object LocalTime baru
+4. Format standard LocalTime adalah HH:mm:ss.nano, dimana second dan nano second nya optional
+
+
+
+
 
 
 
