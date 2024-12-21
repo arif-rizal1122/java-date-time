@@ -84,6 +84,23 @@ https://currentmillis.com/
 3. LocalTime juga immutable, jadi kita tidak bisa mengubahnya setelah datanya dibuat, jika kita ubah, maka akan menghasilkan object LocalTime baru
 4. Format standard LocalTime adalah HH:mm:ss.nano, dimana second dan nano second nya optional
 
+# LOCAL DATE TIME
+
+1. Seperti dari nama class nya, LocalDateTime, class ini digunakan sebagai representasi tanggal dan waktu, mirip seperti class Date
+2. LocalDateTime juga immutable, jadi tidak bisa diubah setelah dibuat, jika diubah otomatis akan membuat object baru
+3. Cara pembuatan, cara mengubah, memanipulasi nya pun sama seperti LocalDate dan LocalTime
+4. Dan format default untuk LocalDateTime adalah menggunakan format yyyy-MM-ddTHH:mm:ss.nano
+
+¥ Konversi dari dan ke LocalDate
+1. Kadang ada kebutuhan kita melakukan konversi data dari LocalDate ke LocalDateTime atau juga sebaliknya
+2. Untuk melakukan konversi dari LocalDateTime ke LocalDate, kita bisa menggunakan method toLocalDate()
+3. Sedangkan untuk melakukan konversi dari LocalDate ke LocalDateTime, kita bisa mennggunakann method atTime()
+
+
+¥ Konversi dari dan ke LocalTime
+1. Selain melakukan konnversi untuk tipe data LocalDate, kita juga bisa lakukan ke dan dari tipe data LocalTime.
+2. Untuk melakukan konversi dari LocalDateTime ke LocalTime, kita bisa menggunakan method toLocalTime()
+3. Sedangkan untuk melakukan konversi dari LocalTime ke LocalDateTime, kita bisa mennggunakann method atDate()
 
 
 
