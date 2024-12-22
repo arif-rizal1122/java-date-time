@@ -129,6 +129,17 @@ https://currentmillis.com/
 3. Untuk membuat ZoneOffset, kita bisa menggunakan method of
 4. ZoneOffset adalah turunan dari ZoneId, jadi semua parameter yang menerima object ZoneId, bisa kita isi dengan ZoneOffset
 
+# ZonedDateTime
+
+1. Pada class LocalDateTime, secara default tidak ada informasi time zone sama sekali pada class tersebut
+2. Jika kita ingin membuat tanggal dan waktu yang mendukung time zone, kita bisa menggunakan class ZonedDateTime
+3. Class ZonedDateTime sama seperti LocalDateTime, perbedaannya hanyalah mendukung time zone
+4. Format default untuk ZonedDateTime adalah yyyy-MM-ddTHH:mm:ss.nano(+/-)ZoneOffset[ZoneId], dimana ZoneId tidak wajib, dan jika ZoneId diisi, maka nilai ZoneOffset akan di hiraukan
+
+¥ Mengubah Time Zone
+1. Untuk mengubah time zone pada ZonedDateTime, terdapat dua cara
+2. Pertama, mengubah time zone, tanpa merubah tanggal dan waktu. Caranya dengan menggunakan method withZoneSameLocal(ZoneId)
+3. Kedua, mengubah time zone, sehingga tanggal dan waktu mengikuti timezone yang baru. Caranya dengan menggunakan method withZoneSameInstance(ZoneId)
 
 
 
