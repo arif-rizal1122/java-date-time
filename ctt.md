@@ -142,9 +142,23 @@ https://currentmillis.com/
 3. Kedua, mengubah time zone, sehingga tanggal dan waktu mengikuti timezone yang baru. Caranya dengan menggunakan method withZoneSameInstance(ZoneId)
 
 
+# OffsetTime dan OffsetDateTime
+
+1. Java Date & Time API memiliki class yang bernama OffsetTime dan OffsetDateTime
+2. Class OffsetTime adalah seperti LocalTime, namun memiliki time zone offset
+3. Dan Class OffsetDateTime adalah seperti LocalDateTime, namun memiliki time zone offset
+4. Sekilas OffsetDateTime mirip dengan ZonedDateTime, yang membedakan adalah kalo OffsetDateTime hanya bisa menggunakan ZoneOffset, tidak bisa menggunakan ZoneId
+5. Format default OffsetTime adalah HH:mm:ss(+/-)ZoneOffset
+6. Format default OffsetDateTime adalah yyyy-MM-ddTHH:mm:ss(+/-)ZoneOffset
 
 
+1. Apa yang bisa kita lakukan di LocalTime dan LocalDateTime bisa juga dilakukan di OffsetTime dan OffsetDateTime
+2. Selain itu kita juga bisa konversi data dari dan ke non offset
 
+
+¥ Konversi ke dan dari Non Offset
+1. Apa yang bisa kita lakukan di LocalTime dan LocalDateTime bisa juga dilakukan di OffsetTime dan OffsetDateTime
+2. Selain itu kita juga bisa konversi data dari dan ke non offset
 
 
 
