@@ -112,7 +112,22 @@ https://currentmillis.com/
 5. Format default untuk Year adalah yyyy dan format untuk YearMonth adalah yyyy-MM dan format untuk MonthDay adalah --MM-dd
 
 
+# ZoneId dan ZoneOffset
 
+1. Sebelumnya kita sudah tahu bahwa terdapat class TimeZone di Java sebagai representasi time zone
+2. Namun di Java Date & Time API terbaru, terdapat class baru untuk mendukung time zone, yaitu ZoneId dan ZoneOffset
+
+¥ ZoneId
+1. ZoneId mirip dengan TimeZone, dimana ini merupakan representasi time zone id
+2. Untuk mendapatkan default time zone, kita bisa menggunakan method ZoneId.systemDefault()
+3. Untuk membuat ZoneId, caranya bisa menggunakan method ZoneId.of(“Zone Id”)
+4. Dan untuk mendapatkan semua daftar time zone id yang didukung oleh Java, kita bisa menggunakan method
+
+¥ ZoneOffset
+1. Jika ZoneId merupakan representasi timezone menggunakan time zone id
+2. Pada class ZonenOffset, iin adalah format time zone dengan offset dari time zone Greenwich/UTC, misalnya +07:00 atau -01:00
+3. Untuk membuat ZoneOffset, kita bisa menggunakan method of
+4. ZoneOffset adalah turunan dari ZoneId, jadi semua parameter yang menerima object ZoneId, bisa kita isi dengan ZoneOffset
 
 
 
