@@ -194,6 +194,13 @@ Untungnya, kita juga bisa membuat tipe data tanggal dan waktu langsung menggunak
 Secara otomatis informasi time zone Clock akan dibawa di tipe data tanggal dan waktu yang kita buat
 
 
+# DURATION
+
+1. Class Duration adalah representasi dari data durasi waktu
+2. Durasi waktu yang terdapat di class Duration
+3. Dengan menggunakan Duration, kita bisa dengan mudah mengkonversi durasi ke waktu yang kita inginkan, misal hour, minute, second dan nano second
+
+
 
 
 
