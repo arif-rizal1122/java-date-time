@@ -200,6 +200,11 @@ Secara otomatis informasi time zone Clock akan dibawa di tipe data tanggal dan w
 2. Durasi waktu yang terdapat di class Duration
 3. Dengan menggunakan Duration, kita bisa dengan mudah mengkonversi durasi ke waktu yang kita inginkan, misal hour, minute, second dan nano second
 
+# PERIOD
+
+1. Class Period mirip dengan Duration, yang membedakan adalah Period adalah durasi untuk tanggal
+2. Cara penggunaan Period hampir mirip dengan Duration
+
 
 
 
