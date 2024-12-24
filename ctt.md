@@ -285,6 +285,10 @@ TemporalAdjuster            Strategi untuk menyesuaikan objek temporal.
 1. DateTimeFormatter juga mendukung internationalization
 2. Caranya saat membuat formatter, kita perlu menambahkan Locale
 
+# Legacy Date dan Time
+
+1. Saat fitur Java Date & Time API baru keluar, Java juga menambahkan integrasi dengan fitur legacy date dan time yang menggunakan Date, Calendar dan TimeZone
+2. Kita bisa melakukan konversi dari tipe temporal legacy ke tipe temporal baru ataupun sebaliknya
 
 
 
