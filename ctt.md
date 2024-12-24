@@ -252,6 +252,10 @@ TemporalAdjuster            Strategi untuk menyesuaikan objek temporal.
 3. Terdapat banyak static method di TemporalAdjusters yang bisa kita gunakan untuk mempermudah melakukan penyesuaian objek temporal
 
 
+# DayOfWeek
+
+1. Yang menarik di Java Date & Time adalah, memiliki implementasi data hari
+2. Data hari ini beruba Enum DayOfWeek, namun dia adalah turunan dari Temporal, sehingga operasi yang bisa dilakukan di Temporal bisa kita lakukan disini, seperti menambah atau mengurangi
 
 
 
