@@ -258,14 +258,32 @@ TemporalAdjuster            Strategi untuk menyesuaikan objek temporal.
 2. Data hari ini beruba Enum DayOfWeek, namun dia adalah turunan dari Temporal, sehingga operasi yang bisa dilakukan di Temporal bisa kita lakukan disini, seperti menambah atau mengurangi
 
 
+# Parsing dan Formatting
+
+1. Sebelumnya di awal-awal kita sering sekali menggunakan method parse untuk melakukan parsing data String menjadi objek Temporal
+2. Sebenarnya proses parsing dan formatting tersebut dilakukan oleh class java.time.format.DateTimeFormatter
+
+¥ Pattern
+1. Pattern untuk membuat DateTimeFormatter hampir mirip dengan pattern yang sudah pernah dibahas di course tentang Java Internationalization
+2. Atau lebih detail bisa dilihat di halaman ini : https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/time/format/DateTimeFormatter.html 
+
+¥ Parse
+1. Sebelumnya kita sudah bahas tentang default pattern untuk parsing semua tipe objek temporal
+2. Jika kita ingin mengubah format pattern nya, kita bisa menggunakan DateTimeFormatter pada saat melakukan parsing, misal :
+3. LocalDate.parse(“yyyy MM hh”, dateTimeFormatter)
+
+¥ Formatter
+1. Untuk formatting juga kita bisa menggunakan DateTimeFormatter
+2. Untuk melakukan formatting, kita bisa menggunakan method format(DateTimeFormatter) milik objek temporal
+
+¥ Default Formatter
+1. Selain kita bisa membuat formatter sendiri menggunakan pattern
+2. Sudah disediakan juga formatter default, sehingga jika kita ingin menggunakan formatter misal yang sudah standar internasional, kita tidak perlu membuat ulang menggunakan pattern
 
 
-
-
-
-
-
-
+¥ Internationalization
+1. DateTimeFormatter juga mendukung internationalization
+2. Caranya saat membuat formatter, kita perlu menambahkan Locale
 
 
 
