@@ -205,10 +205,51 @@ Secara otomatis informasi time zone Clock akan dibawa di tipe data tanggal dan w
 1. Class Period mirip dengan Duration, yang membedakan adalah Period adalah durasi untuk tanggal
 2. Cara penggunaan Period hampir mirip dengan Duration
 
+# TEMPORAL
+
+1. Di dalam package java.time, sebenarnya ada package java.time.temporal
+2. Di dalam package java.time.temporal terdapat banyak sekali interface yang merupakan kontrak dari Java Date & Time API
 
 
+¥ Interface Temporal
+Interface                   Keterangan
+
+Temporal                    Interface untuk temporal object, seperti date, time, dan lain-lain
+TemporalAmount              Interface untuk jumlah waktu, seperti duration dan period
+TemporalUnit                Interface untuk unit satuan temporal, seperti jam, menit, hari
+TemporalField               Interface untuk field dalam temporal data
+TemporalQuery               Interface untuk query data dari TemporalAccessor (super interface Temporal)
+TemporalAdjuster            Strategi untuk menyesuaikan objek temporal.
 
 
+¥ Hampir semua tipe data tanggal dan waktu di Java Date & Time adalah implementasi dari interface Temporal
+¥ Maka dari itu, jika diperhatikan, hampir semua tipe data nya memiliki method-method yang hampir sama
+
+
+¥ TemporalAmount
+1. Duration dan Period adalah implementasi dari interface TemporalAmount
+2. Salah satu method yang menggunakan TemporalAmount di Temporal adalah plus() da minus()
+3. Artinya, dengan ini kita bisa meggunakan object TemporalAmount untuk melakukan penambahan/pengurangan tanggal dan waktu
+
+¥ TemporalUnit
+1. TemporalUnit adalah implementasi dari unit satuan waktu
+2. Implementasi TemporalUnit adalah sebuah enum ChronoUnit
+3. TemporalUnit selain sebagai informasi satuan waktu, bisa juga digunakan untun menghitung durasi waktu
+
+¥ TemporalField
+1. TemporalField adalah informasi field yang terdapat dalam sebuah tipe data
+2. Semua object Temporal memiliki method bernama get(TemporalField) atau getLong(TemporalField) untuk mendapatkan info seputar field pada object tersebut, sesuai dengan Field yang kita inginkan
+3. Implementasi TemporalField adalah enum bernama ChronoField
+
+
+¥ TemporalQuery
+1. TemporalQuery merupakan lambda interface yang bisa kita gunakan untuk mengambil informasi dari data TemporalAccessor
+2. TemporalQuery adalah generic type, jadi kita bisa mengembalikan tipe data apapun pada hasil query yang kita lakuka ndi TemporalAccessor
+
+¥ TemporalAdjuster
+1. TemporalAdjuster adalah strategi untuk menyesuaikan objek temporal.
+2. Kita bisa melakukan implementasi penyesuaian object sendiri, atau kita juga bisa menggunakan helper class beranam TemporalAdjusters
+3. Terdapat banyak static method di TemporalAdjusters yang bisa kita gunakan untuk mempermudah melakukan penyesuaian objek temporal
 
 
 
